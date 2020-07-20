@@ -1,0 +1,26 @@
+@import "../sass/mixins";
+@import "../sass/variables";
+
+/** desktop **/
+
+.app-container {
+    background-color: white;
+    margin: 8px auto;
+     :before {
+        content: '';
+        float: left;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.app-header {
+    width: 100%;
+}
+
+@media screen and (min-width: $break-large) {}
+
+
+/** mobile **/
+
+@media screen and (min-width: $break-small) {}

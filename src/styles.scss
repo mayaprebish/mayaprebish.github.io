@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import './sass/mixins';
+@import './sass/variables';
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: black;
+    html {
+        height: 100%;
+        min-height: 100%;
+    }
+}
+
+.circle-fixed {
+    @include circle-fixed;
+}
+
+.circle-unfixed {
+    @include circle-unfixed;
+}
+
+.divider {
+    @include divider;
+}

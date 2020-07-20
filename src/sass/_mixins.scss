@@ -1,0 +1,18 @@
+@mixin circle-fixed {
+    position: fixed;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+@mixin circle-unfixed {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+@mixin divider {
+    width: 50%;
+    height: 10px;
+    background-color: black;
+}

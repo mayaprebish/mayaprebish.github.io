@@ -30,9 +30,9 @@ export class NavComponent implements OnInit {
   ngOnInit(): void {
     window.addEventListener('load', function() {
       // scroll into view
-      document.querySelector('.js-scroll-to-content1').addEventListener('click', function(e) {
+      document.querySelector('.js-scroll-to-about').addEventListener('click', function(e) {
         e.preventDefault();
-        document.querySelector('.content1').scrollIntoView({ behavior: 'smooth' });
+        document.querySelector('.about').scrollIntoView({ behavior: 'smooth' });
       });
 
       document.querySelector('.js-scroll-to-content2').addEventListener('click', function(e) {

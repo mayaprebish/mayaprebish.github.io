@@ -1,7 +1,29 @@
 .content-container {
     width: 100%;
+    background-color: black;
+    color: white;
 }
 
 .nav {
     width: 100%;
+}
+
+.about {
+    width: 50%;
+    float: left;
+}
+
+.content2 {
+    width: 50%;
+    float: right;
+}
+
+.content3 {
+    width: 50%;
+    float: left;
+}
+
+.content4 {
+    width: 50%;
+    float: right;
 }

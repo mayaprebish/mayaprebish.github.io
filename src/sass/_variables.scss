@@ -1,5 +1,13 @@
+// media queries
 $break-small: 320px;
 $break-large: 1200px;
+// width/height vars
 $text-content-width: 50%;
 $tagline-height: 200px;
 $header-height: calc(100vh - #{$tagline-height});
+// colors!
+$light-black: #464443;
+$soft-white: #F8F8F8;
+$light-gray: #9E9C99;
+$dusty-beige: #D6C2AE;
+$dusty-rose: #E4CFC4;

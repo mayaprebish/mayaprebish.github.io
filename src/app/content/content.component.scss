@@ -1,26 +1,58 @@
+@import "../../sass/mixins";
+@import "../../sass/variables";
 .content-container {
     width: 100%;
-    background-color: black;
-    color: white;
+    background-color: $soft-white;
 }
 
 .nav {
     width: 100%;
 }
 
+.wrapper {
+    width: 100%;
+    display: flex;
+}
+
+.about-wrapper {
+    background-color: $dusty-beige;
+}
+
 .about {
     width: 50%;
-    float: left;
+    text-align: justify;
+    margin: 0;
+    padding: 0;
+}
+
+.about-text {
+    margin: 0;
+    padding: 4em 0 3em 3em;
+}
+
+.work-wrapper {
+    background-color: $light-black;
+    color: $soft-white;
+    justify-content: flex-end;
 }
 
 .content2 {
     width: 50%;
-    float: right;
+}
+
+.contact-wrapper {
+    background-color: $dusty-beige;
 }
 
 .content3 {
     width: 50%;
     float: left;
+}
+
+.resume-wrapper {
+    background-color: $soft-white;
+    color: $light-black;
+    justify-content: flex-end;
 }
 
 .content4 {

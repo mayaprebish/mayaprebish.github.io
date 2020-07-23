@@ -39,6 +39,7 @@
 .about-container {
     display: flex;
     justify-content: flex-end;
+    align-content: center;
     height: $tagline-height;
     margin: 0 2em;
 }
@@ -48,6 +49,10 @@
     text-align: justify;
     width: $text-content-width;
     position: relative;
+    p {
+        margin-block-start: 3em;
+        margin-inline-end: 4em;
+    }
 }
 
 #circle {

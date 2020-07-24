@@ -16,18 +16,23 @@
 
 .about-wrapper {
     background-color: $dusty-beige;
+    justify-content: flex-start;
 }
 
 .about {
-    width: 50%;
     text-align: justify;
     margin: 0;
     padding: 0;
+    color: $light-black;
 }
 
 .about-text {
     margin: 0;
-    padding: 4em 0 3em 3em;
+    padding: 3em 0 3em 3em;
+    color: $light-black;
+    .subheading {
+        font-size: 3em;
+    }
 }
 
 .work-wrapper {
@@ -38,6 +43,7 @@
 
 .content2 {
     width: 50%;
+    color: $light-black;
 }
 
 .contact-wrapper {
@@ -47,6 +53,7 @@
 .content3 {
     width: 50%;
     float: left;
+    color: $dusty-beige;
 }
 
 .resume-wrapper {
@@ -58,4 +65,29 @@
 .content4 {
     width: 50%;
     float: right;
+    color: $soft-white;
+}
+
+.education-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    min-height: $header-height;
+}
+
+#neu-circle {
+    position: relative;
+    background-image: url(../../assets/seal.png);
+    background-size: 400px;
+    background-position-y: center;
+    min-width: 400px;
+    min-height: 400px;
+    left: 6%;
+    transition: .5s;
+}
+
+#neu-circle:hover {
+    opacity: 90%;
+    transition: .3s;
 }

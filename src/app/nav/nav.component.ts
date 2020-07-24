@@ -10,20 +10,22 @@ export class NavComponent implements OnInit {
   @ViewChild('stickyNav') navElement: ElementRef;
 
   sticky: boolean = false;
+  invisible: boolean = false;
+
   navPosition: any;
   ngAfterViewInit(){
     this.navPosition = this.navElement.nativeElement.offsetTop
   }
-
-  constructor() { }
 
   @HostListener('window:scroll', ['$event'])
   handleScroll(){
     const windowScroll = window.pageYOffset;
     if(windowScroll >= this.navPosition){
       this.sticky = true;
+      this.invisible = false;
     } else {
       this.sticky = false;
+      this.invisible = true;
     }
   }
 

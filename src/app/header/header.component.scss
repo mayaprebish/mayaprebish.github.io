@@ -70,6 +70,12 @@
     min-width: 400px;
     min-height: 400px;
     left: 6%;
+    transition: .5s;
+}
+
+#circle:hover {
+    opacity: 90%;
+    transition: .3s;
 }
 
 .divider {

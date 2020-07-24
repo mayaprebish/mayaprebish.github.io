@@ -8,12 +8,18 @@
         width: 100%;
     }
     
+    .invisible {
+        display: none;
+    }
+    
     ul {
         list-style-type: none;
         margin: 0;
         padding: 0;
         overflow: hidden;
-        background-color: $soft-white;
+        background-color: $dusty-beige;
+        display: flex;
+        justify-content: center;
     }
     
     li {
@@ -31,6 +37,6 @@
     /* Change the link color to #111 (black) on hover */
     
     li a:hover {
-        background-color: $dusty-beige;
+        background-color: $dusty-rose;
         transition: 0.3s;
     }

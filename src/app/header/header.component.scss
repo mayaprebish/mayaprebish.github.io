@@ -129,13 +129,12 @@
     .about-content {
         background-color: $dusty-beige;
         color: $soft-white;
-        text-align: left;
+        text-align: justify;
         width: auto;
         position: relative;
         margin-top: 0;
         padding: 32px;
         p {
-            font-size: 20px;
             margin-block-end: auto;
             margin-block-start: auto;
             margin-inline-start: auto;
@@ -165,18 +164,15 @@
         position: absolute;
         display: block;
         z-index: 8;
-        left: 3%;
+        right: 3%;
         top: 0;
-        h1 {
+        .name {
             font-size: 7vw;
-            .name {
-                max-width: 100%;
-            }
-            .tagline {
-                width: 100%;
-                max-width: 100%;
-                margin-top: 108px;
-            }
+            text-align: left;
+        }
+        .tagline {
+            font-size: 7vw;
+            text-align: right;
         }
     }
 }

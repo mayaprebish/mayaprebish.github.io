@@ -11,6 +11,7 @@
     align-items: center;
     justify-content: flex-start;
     min-height: $header-height;
+    padding: 32px 0 0;
 }
 
 .title {
@@ -21,7 +22,6 @@
     width: 100%;
     h1 {
         overflow: hidden;
-        word-wrap: none;
         font-size: 2.5vw;
         .name {
             max-width: 2em;
@@ -80,6 +80,107 @@
 
 /** mobile **/
 
-@media screen and (min-width: $break-small) {}
+@media screen and (max-width: $break-med) {
+    .header-container {
+        width: 100%;
+        height: 100%;
+        background-color: $dusty-beige;
+        min-height: 100vh;
+        overflow-x: hidden;
+    }
+    .title-content {
+        display: flex;
+        align-items: center;
+        min-height: auto;
+    }
+    .title {
+        position: absolute;
+        display: flex;
+        z-index: 8;
+        left: 3%;
+        top: 0;
+        width: 100%;
+        h1 {
+            overflow: hidden;
+            font-size: 3.5vw;
+            .name {
+                max-width: 100%;
+            }
+            .tagline {
+                width: 100%;
+                max-width: 100%;
+                margin-top: 108px;
+            }
+        }
+    }
+    .name {
+        color: $soft-white;
+    }
+    .tagline {
+        color: $soft-white;
+        font-weight: lighter;
+    }
+    .about-container {
+        display: block;
+        justify-content: center;
+        align-content: center;
+        margin: 0;
+    }
+    .about-content {
+        background-color: $dusty-beige;
+        color: $soft-white;
+        text-align: left;
+        width: auto;
+        position: relative;
+        margin-top: 0;
+        padding: 32px;
+        p {
+            font-size: 20px;
+            margin-block-end: auto;
+            margin-block-start: auto;
+            margin-inline-start: auto;
+            margin-inline-end: auto;
+        }
+    }
+    #circle {
+        position: relative;
+        background-image: url(../../assets/me.png);
+        background-size: 380px;
+        background-attachment: fixed;
+        background-position-y: top;
+        min-width: 0;
+        min-height: 0;
+        width: 100%;
+        height: 300px;
+        left: 0;
+        transition: .5s;
+        border-radius: 0;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: $break-small) {
+    .title {
+        position: absolute;
+        display: block;
+        z-index: 8;
+        left: 3%;
+        top: 0;
+        width: 100%;
+        h1 {
+            overflow: hidden;
+            font-size: 7vw;
+            .name {
+                max-width: 100%;
+            }
+            .tagline {
+                width: 100%;
+                max-width: 100%;
+                margin-top: 108px;
+            }
+        }
+    }
+}
 
 @media screen and (max-width: $break-large) {}

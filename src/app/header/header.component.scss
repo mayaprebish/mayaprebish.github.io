@@ -92,6 +92,7 @@
         display: flex;
         align-items: center;
         min-height: auto;
+        padding: 0;
     }
     .title {
         position: absolute;
@@ -121,6 +122,7 @@
         font-weight: lighter;
     }
     .about-container {
+        overflow-y: hidden;
         display: block;
         justify-content: center;
         align-content: center;

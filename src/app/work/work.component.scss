@@ -1,0 +1,19 @@
+@import "../../sass/mixins";
+@import "../../sass/variables";
+.work {
+    height: 100vh;
+    margin: 0;
+}
+
+.circle-wrapper {
+    margin-top: 12vh;
+}
+
+.work-circle {
+    background-image: url('../../assets/projects_white_both.png');
+    background-size: 450px;
+    width: 450px;
+    height: 450px;
+    position: absolute;
+    left: 6%;
+}

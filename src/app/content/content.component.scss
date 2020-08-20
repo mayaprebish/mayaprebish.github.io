@@ -16,78 +16,16 @@
 
 .about-wrapper {
     background-color: $dusty-beige;
-    justify-content: flex-start;
 }
 
-.about {
-    text-align: justify;
-    margin: 0;
-    padding: 0;
-    color: $light-black;
-}
-
-.about-text {
-    margin: 0;
-    padding: 3em 0 3em 3em;
-    color: $light-black;
-    .subheading {
-        font-size: 3em;
-    }
+.experience-wrapper {
+    background-color: $soft-white;
 }
 
 .work-wrapper {
     background-color: $light-black;
-    color: $soft-white;
-    justify-content: flex-end;
-}
-
-.content2 {
-    width: 50%;
-    color: $light-black;
 }
 
 .contact-wrapper {
     background-color: $dusty-beige;
-}
-
-.content3 {
-    width: 50%;
-    float: left;
-    color: $dusty-beige;
-}
-
-.resume-wrapper {
-    background-color: $soft-white;
-    color: $light-black;
-    justify-content: flex-end;
-}
-
-.content4 {
-    width: 50%;
-    float: right;
-    color: $soft-white;
-}
-
-.education-header {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    min-height: $header-height;
-}
-
-#neu-circle {
-    position: relative;
-    background-image: url(../../assets/seal.png);
-    background-size: 400px;
-    background-position-y: center;
-    min-width: 400px;
-    min-height: 400px;
-    left: 6%;
-    transition: .5s;
-}
-
-#neu-circle:hover {
-    opacity: 90%;
-    transition: .3s;
 }

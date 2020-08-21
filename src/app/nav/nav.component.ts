@@ -39,17 +39,17 @@ export class NavComponent implements OnInit {
 
       document.querySelector('.js-scroll-to-content2').addEventListener('click', function(e) {
         e.preventDefault();
-        document.querySelector('.content2').scrollIntoView({ behavior: 'smooth' });
+        document.querySelector('.experience').scrollIntoView({ behavior: 'smooth' });
       });
 
       document.querySelector('.js-scroll-to-content3').addEventListener('click', function(e) {
         e.preventDefault();
-        document.querySelector('.content3').scrollIntoView({ behavior: 'smooth' });
+        document.querySelector('.work').scrollIntoView({ behavior: 'smooth' });
       });
 
       document.querySelector('.js-scroll-to-content4').addEventListener('click', function(e) {
         e.preventDefault();
-        document.querySelector('.content4').scrollIntoView({ behavior: 'smooth' });
+        document.querySelector('.contact').scrollIntoView({ behavior: 'smooth' });
       });
   
       // // scroll to top

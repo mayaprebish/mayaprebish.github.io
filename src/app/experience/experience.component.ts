@@ -6,23 +6,23 @@ import { Component, HostListener, ViewChild, ElementRef } from '@angular/core';
   styleUrls: ['./experience.component.scss']
 })
 export class ExperienceComponent {
-  @ViewChild('experience-circle') experienceCircle: ElementRef;
+  @ViewChild('header') headerText: ElementRef;
 
-  rotation: any;
-  rotationCss = {
-    '-webkit-transform': 'rotate(0deg)',
-    '-moz-transform': 'rotate(0deg)',
-    'transform': 'rotate(0deg)',
+  xloc: any;
+  headerCss = {
+    '-webkit-transform': 'translateX(0)',
+    '-moz-transform': 'translateX(0)',
+    'transform': 'translateX(0)',
   }
 
   @HostListener('window:scroll', ['$event'])
   handleScroll(){
     const windowScroll = window.pageYOffset;
-    this.rotation = 270 + windowScroll / 3;
-    this.rotationCss = {
-      '-webkit-transform': 'rotate(' + this.rotation + 'deg)',
-      '-moz-transform': 'rotate(' + this.rotation + 'deg)',
-      'transform': 'rotate(' + this.rotation + 'deg)'
+    this.xloc = windowScroll / 2;
+    this.headerCss = {
+      '-webkit-transform': 'translateX(' + this.xloc +'px)',
+      '-moz-transform': 'translateX(' + this.xloc + 'px)',
+      'transform': 'translateX(' + this.xloc + 'px)'
     };
   };
 }

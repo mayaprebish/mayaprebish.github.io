@@ -9,11 +9,9 @@
     margin-top: 12vh;
 }
 
-.experience-circle {
-    background-image: url('../../assets/experience_black_both.png');
-    background-size: 450px;
-    width: 450px;
-    height: 450px;
-    position: absolute;
-    right: 6%;
+.header {
+    .header-text {
+        position: absolute;
+        color: $light-black;
+    }
 }

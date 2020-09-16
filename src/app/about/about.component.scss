@@ -7,11 +7,40 @@
     padding-top: 10vh;
 }
 
+.about-container {
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 100%;
+    color: $soft-white;
+    .about-text {
+        position: absolute;
+        p {
+            text-align: justify;
+            margin: 0;
+            width: 40vw;
+        }
+    }
+}
+
+.wrapper {
+    width: 20vw;
+    p {
+        text-align: justify;
+        padding: 15px 0;
+    }
+}
+
+.skills-wrapper {
+    width: 40vw;
+}
+
 .skills-chart {
-    width: 95%;
-    max-width: 500px;
+    width: 85%;
     ul {
         list-style: none;
+        width: 100%;
+        padding: 0;
     }
     .relative {
         position: relative;
@@ -40,7 +69,7 @@
         span {
             display: inline-block;
             width: $skills-width;
-            padding: 15px;
+            padding: 15px 0;
         }
     }
     &.in-view {
@@ -69,34 +98,70 @@
     }
 }
 
-.horizontal-divider {
-    width: 5px;
-    height: 100vh;
-    background-color: $soft-white;
-}
-
-.title {
-    display: flex;
-    position: absolute;
-    left: 35vw;
-    h1 {
-        margin: 0;
-        padding: 0;
+@media screen and (max-width: $break-med) {
+    .about-container {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
     }
-}
-
-.about-container {
-    display: flex;
-    justify-content: flex-start;
-    height: 100%;
-    width: 100%;
-    color: $soft-white;
-    .about-text {
-        margin: 5vw;
-        p {
-            text-align: justify;
-            margin: 0;
-            width: 40vw;
+    .skills-chart {
+        width: 100%;
+        .skills {
+            li::before,
+            li::after {
+                content: "";
+                position: absolute;
+                top: 25%;
+                height: 50%;
+                left: 120px;
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+            }
+            li::after {
+                width: calc(100% - 120px);
+                background: $light-gray;
+            }
+            li::before {
+                width: 0;
+                background: $soft-white;
+                transition: width 0.65s ease-out;
+                z-index: 3;
+            }
+            span {
+                font-size: 0.8em;
+                height: 1.6em;
+                display: inline-block;
+                width: 120px;
+                padding: 15px 0;
+            }
         }
+        &.in-view {
+            .skills {
+                li:nth-child(1)::before {
+                    width: calc(100% - 120px);
+                    transition-delay: 0.3s;
+                }
+                li:nth-child(2)::before {
+                    width: calc(90% - 120px);
+                    transition-delay: 0.6s;
+                }
+                li:nth-child(3)::before {
+                    width: calc(80% - 120px);
+                    transition-delay: 0.9s;
+                }
+                li:nth-child(4)::before {
+                    width: calc(70% - 120px);
+                    transition-delay: 1.2s;
+                }
+                li:nth-child(5)::before {
+                    width: calc(50% - 120px);
+                    transition-delay: 1.5s;
+                }
+            }
+        }
+    }
+    .wrapper {
+        width: 80%;
     }
 }

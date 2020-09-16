@@ -1,5 +1,41 @@
 <div class="about">
-    <div class="circle-wrapper">
-        <div class="about-circle" [ngStyle]="rotationCss"></div>
+    <!-- <div class="section-title priorities-title" [ngStyle]="pTitleCss" #prioritiesTitle>
+        <h1>my priorities</h1>
+    </div> -->
+    <div class="about-container">
+        <!-- <div class="title" [ngStyle]=titleCss>
+            <h1>about me</h1>
+        </div>
+        <div class="horizontal-divider"></div>
+        <div class="about-text">
+            <h1>my priorities</h1>
+            <p>writing clean, efficient and readable code</p>
+            <p>effective communication with teams and peers for maximum learning</p>
+            <p>bringing my voice and creativity to every project</p>
+            <h1>my strengths</h1>
+            <p>i'm a quick and eager learner who learns best from reading code</p>
+            <p>i'm a bug catcher: i pay close attention to details</p>
+            <p>i'm thorough and want to see my code done right</p>
+            <h1>my skills</h1>
+        </div> -->
+        <div class="skills-chart" [class.in-view]="inView" #skillsChart>
+            <ul class="skills">
+                <li class="relative">
+                    <span>HTML / CSS</span>
+                </li>
+                <li class="relative">
+                    <span>Javascript / Typescript</span>
+                </li>
+                <li class="relative">
+                    <span>C#</span>
+                </li>
+                <li class="relative">
+                    <span>Java</span>
+                </li>
+                <li class="relative">
+                    <span>Python</span>
+                </li>
+            </ul>
+        </div>
     </div>
 </div>

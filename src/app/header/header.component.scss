@@ -45,18 +45,17 @@
     justify-content: flex-end;
     align-content: center;
     height: $tagline-height;
-    margin: 0 2em;
 }
 
 .about-content {
     background-color: $soft-white;
     color: $light-black;
     text-align: justify;
-    width: $text-content-width;
+    width: 40vw;
+    margin-right: 5vw;
     position: relative;
     p {
-        margin-block-start: 3em;
-        margin-inline-end: 4em;
+        margin: 0;
     }
 }
 

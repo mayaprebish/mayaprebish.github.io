@@ -17,7 +17,7 @@
         margin: 0;
         padding: 0;
         overflow: hidden;
-        background-color: $dusty-beige;
+        background-color: $light-black;
         display: flex;
         justify-content: center;
     }
@@ -28,7 +28,7 @@
     
     li a {
         display: block;
-        color: $light-black;
+        color: $soft-white;
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
@@ -37,6 +37,6 @@
     /* Change the link color to #111 (black) on hover */
     
     li a:hover {
-        background-color: $dusty-rose;
+        background-color: $light-gray;
         transition: 0.3s;
     }

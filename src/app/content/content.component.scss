@@ -15,7 +15,10 @@
 }
 
 .about-wrapper {
-    background-color: $dusty-beige;
+    background-color: $light-black;
+    app-about {
+        width: 100%;
+    }
 }
 
 .experience-wrapper {

@@ -9,8 +9,23 @@
     border-radius: 50%;
 }
 
-@mixin divider {
-    width: 50%;
-    height: 10px;
-    background-color: #464443;
+@mixin background-shape {
+    position: absolute;
+    z-index: -1;
+}
+
+@mixin section-title {
+    background-color: $light-black;
+    line-height: 10vw;
+    height: 10vw;
+    width: 30%;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    margin-right: 1%;
+    h1 {
+        font-size: 2em;
+        color: $soft-white;
+        margin: 0;
+    }
 }

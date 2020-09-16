@@ -21,6 +21,10 @@ body {
     @include circle-unfixed;
 }
 
-.divider {
-    @include divider;
+.background-shape {
+    @include background-shape;
+}
+
+.section-title {
+    @include section-title;
 }

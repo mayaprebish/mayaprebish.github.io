@@ -1,17 +1,74 @@
 @import "../../sass/mixins";
 @import "../../sass/variables";
 .experience {
-    height: 100vh;
+    height: 300vh;
     margin: 0;
 }
 
-.circle-wrapper {
-    margin-top: 12vh;
+.exp-container {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
 }
 
-.header {
-    .header-text {
-        position: absolute;
-        color: $light-black;
+.exp-content {
+    color: $light-black;
+    text-align: justify;
+    width: 40vw;
+    margin: 5vw;
+    position: relative;
+    p {
+        margin: 0;
+    }
+}
+
+.background-shape {
+    width: 50vw;
+    height: 50vh;
+    background-color: $dusty-beige;
+    display: flex;
+    flex-direction: column;
+    &.exp-bg-one {
+        align-items: flex-end;
+        right: 5vw;
+        top: 200vh;
+        h3,
+        p {
+            margin: 2vw 2vw 0 0;
+        }
+    }
+    &.exp-bg-two {
+        align-items: flex-start;
+        left: 5vw;
+        top: 280vh;
+        h3,
+        p {
+            margin: 2vw 0 0 2vw;
+        }
+    }
+    .exp-text {
+        width: 18vw;
+        &.exp-one-text {
+            text-align: right;
+        }
+        &.exp-two-text {
+            text-align: left;
+        }
+    }
+}
+
+.exp-sample {
+    position: absolute;
+    right: 25vw;
+    left: 25vw;
+    &.exp-sample-one {
+        top: 215vh;
+    }
+    &.exp-sample-two {
+        top: 295vh;
+    }
+    .exp-img {
+        width: 50vw;
+        border: 2px solid $light-black;
     }
 }

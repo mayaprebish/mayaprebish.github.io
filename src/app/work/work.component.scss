@@ -1,8 +1,28 @@
 @import "../../sass/mixins";
 @import "../../sass/variables";
 .work {
+    width: 100vw;
     height: 100vh;
     margin: 0;
+}
+
+.work-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+}
+
+.work-content {
+    width: 100%;
+    color: $soft-white;
+    text-align: center;
+    width: 40vw;
+    margin: 5vh 5vw;
+    position: relative;
+    p {
+        margin: 0;
+    }
 }
 
 .circle-wrapper {

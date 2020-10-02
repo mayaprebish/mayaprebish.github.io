@@ -6,23 +6,16 @@ import { Component, HostListener, ViewChild, ElementRef } from '@angular/core';
   styleUrls: ['./experience.component.scss']
 })
 export class ExperienceComponent {
-  @ViewChild('header') headerText: ElementRef;
+  @ViewChild('experience-sample') headerText: ElementRef;
 
   xloc: any;
-  headerCss = {
+  sampleCss = {
     '-webkit-transform': 'translateX(0)',
     '-moz-transform': 'translateX(0)',
     'transform': 'translateX(0)',
   }
 
-  @HostListener('window:scroll', ['$event'])
-  handleScroll(){
-    const windowScroll = window.pageYOffset;
-    this.xloc = windowScroll / 2;
-    this.headerCss = {
-      '-webkit-transform': 'translateX(' + this.xloc +'px)',
-      '-moz-transform': 'translateX(' + this.xloc + 'px)',
-      'transform': 'translateX(' + this.xloc + 'px)'
-    };
-  };
+  mouseHover(e) {
+    console.log('hovered', e);
+  }
 }

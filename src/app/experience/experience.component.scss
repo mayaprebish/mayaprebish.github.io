@@ -1,74 +1,71 @@
 @import "../../sass/mixins";
 @import "../../sass/variables";
 .experience {
-    height: 300vh;
+    width: 100vw;
+    height: auto;
     margin: 0;
+}
+
+.divider {
+    width: 100vw;
+    position: absolute;
+    z-index: 0;
+    left: 50vw;
+    .divider-line {
+        width: 2px;
+        height: 320vh;
+        background-color: $light-black;
+    }
+}
+
+.experience-sample {
+    display: flex;
+    justify-content: center;
+    margin: 5vh;
+    position: relative;
+    z-index: 1;
+    .experience-img {
+        width: 60vw;
+        border: 2px solid $light-black;
+        border-radius: 5px;
+    }
 }
 
 .exp-container {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-content: center;
+    width: 100%;
 }
 
 .exp-content {
+    width: 100%;
     color: $light-black;
-    text-align: justify;
+    text-align: center;
     width: 40vw;
-    margin: 5vw;
+    margin: 5vh 5vw;
     position: relative;
     p {
         margin: 0;
     }
 }
 
-.background-shape {
-    width: 50vw;
-    height: 50vh;
-    background-color: $dusty-beige;
-    display: flex;
-    flex-direction: column;
-    &.exp-bg-one {
-        align-items: flex-end;
-        right: 5vw;
-        top: 200vh;
-        h3,
-        p {
-            margin: 2vw 2vw 0 0;
-        }
-    }
-    &.exp-bg-two {
-        align-items: flex-start;
-        left: 5vw;
-        top: 280vh;
-        h3,
-        p {
-            margin: 2vw 0 0 2vw;
-        }
-    }
-    .exp-text {
-        width: 18vw;
-        &.exp-one-text {
-            text-align: right;
-        }
-        &.exp-two-text {
-            text-align: left;
+
+/** mobile **/
+
+@media screen and (max-width: $break-med) {
+    .experience-sample {
+        justify-content: center;
+        margin: 5vh;
+        position: relative;
+        z-index: 1;
+        .experience-img {
+            width: 90vw;
+            border: 5px solid $light-black;
         }
     }
 }
 
-.exp-sample {
-    position: absolute;
-    right: 25vw;
-    left: 25vw;
-    &.exp-sample-one {
-        top: 215vh;
-    }
-    &.exp-sample-two {
-        top: 295vh;
-    }
-    .exp-img {
-        width: 50vw;
-        border: 2px solid $light-black;
-    }
-}
+@media screen and (max-width: $break-small) {}
+
+@media screen and (max-width: $break-large) {}

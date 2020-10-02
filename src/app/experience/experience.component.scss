@@ -6,28 +6,26 @@
     margin: 0;
 }
 
-.divider {
-    width: 100vw;
-    position: absolute;
-    z-index: 0;
-    left: 50vw;
-    .divider-line {
-        width: 2px;
-        height: 320vh;
-        background-color: $light-black;
-    }
-}
-
 .experience-sample {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     margin: 5vh;
     position: relative;
     z-index: 1;
     .experience-img {
         width: 60vw;
+        min-width: 60vw;
+        height: 100%;
         border: 2px solid $light-black;
         border-radius: 5px;
+        img {
+            width: 60vw;
+        }
+    }
+    .exp-text {
+        width: 30vw;
+        margin: 0 5vw;
     }
 }
 

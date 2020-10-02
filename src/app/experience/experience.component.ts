@@ -14,8 +14,4 @@ export class ExperienceComponent {
     '-moz-transform': 'translateX(0)',
     'transform': 'translateX(0)',
   }
-
-  mouseHover(e) {
-    console.log('hovered', e);
-  }
 }

@@ -2,7 +2,6 @@
 @import "../../sass/variables";
 .experience {
     width: 100vw;
-    height: auto;
     margin: 0;
 }
 
@@ -48,19 +47,40 @@
     }
 }
 
+hr {
+    display: none;
+}
+
 
 /** mobile **/
 
 @media screen and (max-width: $break-med) {
     .experience-sample {
-        justify-content: center;
-        margin: 5vh;
+        display: block;
+        margin: 0;
         position: relative;
         z-index: 1;
         .experience-img {
-            width: 90vw;
-            border: 5px solid $light-black;
+            border: none;
+            img {
+                width: 100vw;
+            }
         }
+        .exp-text {
+            width: 90vw;
+            margin: 0 5vw;
+        }
+    }
+    .exp-content {
+        width: 80vw;
+        margin: 5vh 5vw;
+        position: relative;
+        p {
+            margin: 0;
+        }
+    }
+    hr {
+        display: block;
     }
 }
 

@@ -1,7 +1,6 @@
 @import "../../sass/mixins";
 @import "../../sass/variables";
 .about {
-    height: 60vh;
     width: 100%;
     margin: 0;
     padding: 10vh 0;
@@ -104,6 +103,13 @@
         justify-content: space-evenly;
         flex-direction: column;
         align-items: center;
+        .about-text {
+            p {
+                text-align: justify;
+                margin: 0;
+                width: 80vw;
+            }
+        }
     }
     .skills-chart {
         width: 100%;

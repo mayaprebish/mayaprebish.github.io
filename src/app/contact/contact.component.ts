@@ -18,7 +18,7 @@ export class ContactComponent {
   @HostListener('window:scroll', ['$event'])
   handleScroll(){
     const windowScroll = window.pageYOffset;
-    this.rotation = 210 + windowScroll / 3;
+    this.rotation = windowScroll / 3;
     this.rotationCss = {
       '-webkit-transform': 'rotate(' + this.rotation + 'deg)',
       '-moz-transform': 'rotate(' + this.rotation + 'deg)',

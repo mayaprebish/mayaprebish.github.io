@@ -12,11 +12,12 @@
     margin: 5vh;
     position: relative;
     z-index: 1;
+    color: $light-black;
     .experience-img {
         width: 60vw;
         min-width: 60vw;
         height: 100%;
-        border: 1px solid $soft-white;
+        border: 3px solid $light-black;
         img {
             width: 60vw;
         }

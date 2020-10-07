@@ -17,9 +17,9 @@
         width: 60vw;
         min-width: 60vw;
         height: 100%;
-        border: 3px solid $light-black;
         img {
             width: 60vw;
+            box-shadow: 5px 5px 10px $light-gray;
         }
     }
     .exp-text {
@@ -62,8 +62,11 @@ hr {
         z-index: 1;
         .experience-img {
             border: none;
+            box-shadow: none;
+            width: 100vw;
             img {
                 width: 100vw;
+                box-shadow: 5px 0 10px $light-gray;
             }
         }
         .exp-text {
@@ -80,7 +83,7 @@ hr {
         }
     }
     hr {
-        display: block;
+        display: none;
     }
 }
 

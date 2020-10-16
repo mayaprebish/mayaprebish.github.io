@@ -1,4 +1,5 @@
 import { Component, HostListener, ViewChild, ElementRef } from '@angular/core';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-work',
@@ -6,23 +7,19 @@ import { Component, HostListener, ViewChild, ElementRef } from '@angular/core';
   styleUrls: ['./work.component.scss']
 })
 export class WorkComponent {
-  @ViewChild('work-circle') workCircle: ElementRef;
+  closeResult: string;
 
-  rotation: any;
-  rotationCss = {
-    '-webkit-transform': 'rotate(0deg)',
-    '-moz-transform': 'rotate(0deg)',
-    'transform': 'rotate(0deg)',
+  constructor(private modalService: NgbModal) {}
+
+  openLg(content) {
+    this.modalService.open(content, { size: 'lg' });
   }
 
-  @HostListener('window:scroll', ['$event'])
-  handleScroll(){
-    const windowScroll = window.pageYOffset;
-    this.rotation = 0 + windowScroll / 3;
-    this.rotationCss = {
-      '-webkit-transform': 'rotate(' + this.rotation + 'deg)',
-      '-moz-transform': 'rotate(' + this.rotation + 'deg)',
-      'transform': 'rotate(' + this.rotation + 'deg)'
-    };
-  };
+  openXl(content) {
+    this.modalService.open(content, { size: 'xl' });
+  }
+
+  openScrollableContent(longContent) {
+    this.modalService.open(longContent, { scrollable: true });
+  }
 }

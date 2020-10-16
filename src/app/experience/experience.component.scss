@@ -45,6 +45,26 @@
     p {
         margin: 0;
     }
+    a:link {
+        color: $light-gray;
+        text-decoration: none;
+        transition: ease-in 70ms;
+    }
+    /* visited link */
+    a:visited {
+        color: $light-gray;
+        text-decoration: none;
+    }
+    /* mouse over link */
+    a:hover {
+        color: $light-gray;
+        text-decoration: underline;
+    }
+    /* selected link */
+    a:active {
+        color: $light-gray;
+        text-decoration: underline;
+    }
 }
 
 hr {

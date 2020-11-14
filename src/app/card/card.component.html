@@ -1,0 +1,8 @@
+<div class="project-card">
+    <div class="project-image" style="background-image: url({{cardDetails.imgUrl}});"></div>
+    <div class="project-description">
+        <h3>{{cardDetails.title}}</h3>
+        <p *ngFor="let category of cardDetails.categories"><i>{{category}}&nbsp;</i></p>
+        <p>{{cardDetails.description}}</p>
+    </div>
+</div>

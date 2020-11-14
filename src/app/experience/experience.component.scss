@@ -20,6 +20,13 @@
         img {
             width: 60vw;
             box-shadow: 5px 5px 10px $light-gray;
+            transition: ease-in 200ms;
+        }
+        &:hover {
+            img {
+                box-shadow: 10px 10px 20px $light-gray;
+                transform: translateY(-5px);
+            }
         }
     }
     .exp-text {
@@ -42,6 +49,9 @@
     width: 40vw;
     margin: 5vh 5vw;
     position: relative;
+    h2 {
+        font-family: 'Montserrat', sans-serif;
+    }
     p {
         margin: 0;
     }

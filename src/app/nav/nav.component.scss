@@ -39,6 +39,7 @@
     li a:hover {
         background-color: $light-gray;
         transition: 0.3s;
+        cursor: pointer;
     }
     
     @media screen and (max-width: $break-med) {

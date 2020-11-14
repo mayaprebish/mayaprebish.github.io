@@ -1,67 +1,103 @@
-@import "../../sass/mixins";
-@import "../../sass/variables";
-.work {
-    width: 100vw;
-    height: auto;
-    margin: 0;
-    color: $light-black;
-}
-
-.project-card {
-    width: 30vw;
-    height: fit-content;
-    background-color: $soft-white;
-    display: block;
-    box-shadow: 5px 5px 10px black;
-    &:hover {
-        box-shadow: 10px 10px 20px black;
-        transform: translateY(-5px);
+    @import "../../sass/mixins";
+    @import "../../sass/variables";
+    .work {
+        width: 100vw;
+        height: auto;
+        margin: 0;
+        color: $light-black;
     }
-    transition: ease-in 200ms;
-    .project-description {
-        height: fit-content;
-        width: 80%;
-        margin: 32px;
+    
+    app-card {
+        margin: 0 2vw 2vh 5vw;
     }
-    .project-image {
+    
+    .work-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
         width: 100%;
-        height: 40vh;
-        &.p1 {
-            background-image: url(../../assets/ewaste-preview.PNG);
-            background-size: cover;
+    }
+    
+    .work-content {
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+        color: $soft-white;
+        text-align: center;
+        margin: 10vh 5vw;
+        position: relative;
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+        }
+        p {
+            margin: 0;
+        }
+        ul {
+            padding: 0;
+            margin-left: 5vw;
+            display: flex;
+            align-items: center;
+            li {
+                margin: 0 2vw 0 0;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                list-style: none;
+                width: 8vw;
+                height: 5vh;
+                border: 1px solid $soft-white;
+                border-radius: 4px;
+                &:hover {
+                    background-color: $soft-white;
+                    color: $light-black;
+                    cursor: pointer;
+                }
+                transition: ease-in 0.2s;
+            }
         }
     }
-}
-
-.work-container {
-    display: flex;
-    justify-content: center;
-    padding: 64px;
-}
-
-.work-content {
-    width: 100%;
-    color: $soft-white;
-    text-align: center;
-    width: 40vw;
-    margin: 5vh 5vw;
-    position: relative;
-    p {
+    
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
         margin: 0;
+        padding: 0;
     }
-}
-
-@media screen and (max-width: $break-med) {
-    .work-container {
-        justify-content: center;
+    
+    @media screen and (max-width: $break-small) {
+        .work-container {
+            justify-content: center;
+        }
+        .work-content {
+            margin: 0;
+            display: block;
+            ul {
+                padding: 0;
+                margin-left: 5vw;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                li {
+                    margin: 0 2vw 1vh 0;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    list-style: none;
+                    width: 40vw;
+                    height: 7vh;
+                }
+            }
+        }
+        .cards {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
     }
-    .project-card {
-        width: 70vw;
-        .project-description {}
-        .project-image {}
-    }
-}
-
-@media screen and (max-width: $break-small) {}
-
-@media screen and (max-width: $break-large) {}
+    
+    // }
+    // @media screen and (max-width: $break-small) {}
+    @media screen and (max-width: $break-large) {}

@@ -11,6 +11,7 @@ import { ExperienceComponent } from './experience/experience.component';
 import { WorkComponent } from './work/work.component';
 import { ContactComponent } from './contact/contact.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { CardComponent } from './card/card.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     AboutComponent,
     ExperienceComponent,
     WorkComponent,
-    ContactComponent
+    ContactComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,

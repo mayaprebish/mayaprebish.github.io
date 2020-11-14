@@ -1,25 +1,28 @@
 <div class="work">
     <div class="work-container">
-        <!-- <div class="project-card">
-            <div class="project-image p1"></div>
-            <div class="project-description">
-                <h3>e-waste</h3>
-                <p><i>Angular 9</i></p>
-                <p>For a public writing assignment, I created a responsive mobile-friendly infographic to share information my teammates and I gathered about the disposal of electronic waste. Looks best on mobile but can be viewed on desktop as well.</p>
-                <a href="http://mayaprebish.github.io/ewaste" target="_blank"><button class="btn btn-outline-primary">View Site</button></a>
-            </div>
-        </div> -->
-
-        <!-- <button class="btn btn-outline-primary" (click)="openScrollableContent(longContent)">View Details</button> -->
         <div class="work-content">
+            <h2>projects</h2>
+            <ul class="project-categories">
+                <li class="list-item project-category">All</li>
+                <li class="list-item project-category">Full-Stack</li>
+                <li class="list-item project-category">Front-End</li>
+                <li class="list-item project-category">Software</li>
+            </ul>
+        </div>
+        <div class="cards">
+            <app-card *ngFor="let card of cards" [cardDetails]="card"></app-card>
+        </div>
+        <!-- 
+        <button class="btn btn-outline-primary" (click)="openScrollableContent(longContent)">View Details</button> -->
+        <!-- <div class="work-content">
             <h3>this section is a work in progress! to see some of my old work, please check out my
                 <a href="https://mayaprebish.github.io/portfolio2019" target="_blank">2019 portfolio.</a></h3>
             <p>view the github repository for this Angular site
                 <a href="https://github.com/mayaprebish/mayaprebish.github.io" target="_blank">here.</a>
             </p>
-        </div>
+        </div> -->
     </div>
-    <!-- <ng-template #longContent let-modal>
+    <ng-template #longContent let-modal>
         <div class="modal-header">
             <h4 class="modal-title">Project 1</h4>
             <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
@@ -49,5 +52,5 @@
         <div class="modal-footer">
             <button type="button" class="btn btn-light" (click)="modal.close('Close click')">Close</button>
         </div>
-    </ng-template> -->
+    </ng-template>
 </div>

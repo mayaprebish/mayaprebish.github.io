@@ -16,53 +16,51 @@
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
-        width: 100%;
+        width: 100vw;
     }
     
     .work-content {
+        width: 100vw;
         display: flex;
-        justify-content: flex-start;
-        width: 100%;
+        justify-content: center;
         color: $soft-white;
         text-align: center;
-        margin: 10vh 5vw;
         position: relative;
+        margin: 5vh 0 0 0;
         h2 {
             font-family: 'Montserrat', sans-serif;
         }
         p {
             margin: 0;
         }
-        ul {
-            padding: 0;
-            margin-left: 5vw;
-            display: flex;
-            align-items: center;
-            li {
-                margin: 0 2vw 0 0;
-                display: inline-flex;
-                align-items: center;
-                justify-content: center;
-                list-style: none;
-                width: 8vw;
-                height: 5vh;
-                border: 1px solid $soft-white;
-                border-radius: 4px;
-                &:hover {
-                    background-color: $soft-white;
-                    color: $light-black;
-                    cursor: pointer;
-                }
-                transition: ease-in 0.2s;
-            }
-        }
     }
     
-    .cards {
+    ul {
+        width: 100vw;
+        text-align: center;
         display: flex;
-        flex-wrap: wrap;
-        margin: 0;
+        justify-content: center;
+        color: $soft-white;
         padding: 0;
+        align-items: center;
+        margin: 5vh 0 10vh 0;
+        li {
+            margin: 0 2vw 0 0;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            list-style: none;
+            width: 8vw;
+            height: 5vh;
+            border: 1px solid $soft-white;
+            border-radius: 4px;
+            &:hover {
+                background-color: $soft-white;
+                color: $light-black;
+                cursor: pointer;
+            }
+            transition: ease-in 0.2s;
+        }
     }
     
     @media screen and (max-width: $break-small) {
@@ -89,12 +87,6 @@
                     height: 7vh;
                 }
             }
-        }
-        .cards {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
         }
     }
     

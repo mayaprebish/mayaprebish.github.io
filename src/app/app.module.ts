@@ -12,6 +12,7 @@ import { WorkComponent } from './work/work.component';
 import { ContactComponent } from './contact/contact.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CardComponent } from './card/card.component';
+import { CardsContainerComponent } from './cards-container/cards-container.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { CardComponent } from './card/card.component';
     ExperienceComponent,
     WorkComponent,
     ContactComponent,
-    CardComponent
+    CardComponent,
+    CardsContainerComponent
   ],
   imports: [
     BrowserModule,

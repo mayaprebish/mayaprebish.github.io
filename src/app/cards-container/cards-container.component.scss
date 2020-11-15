@@ -1,0 +1,16 @@
+@import "../../sass/mixins";
+@import "../../sass/variables";
+.cards {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media screen and (max-width: $break-small) {
+    .cards {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

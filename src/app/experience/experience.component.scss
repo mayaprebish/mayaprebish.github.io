@@ -47,7 +47,7 @@
     color: $light-black;
     text-align: center;
     width: 40vw;
-    margin: 5vh 5vw;
+    padding: 5vh 5vw;
     position: relative;
     h2 {
         font-family: 'Montserrat', sans-serif;
@@ -100,6 +100,9 @@ hr {
             }
         }
         .exp-text {
+            h3 {
+                font-family: 'Montserrat', sans-serif;
+            }
             width: 90vw;
             margin: 0 5vw;
         }

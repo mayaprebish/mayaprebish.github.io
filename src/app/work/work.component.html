@@ -2,15 +2,16 @@
     <div class="work-container">
         <div class="work-content">
             <h2>projects</h2>
-            <ul class="project-categories">
-                <li class="list-item project-category">All</li>
-                <li class="list-item project-category">Full-Stack</li>
-                <li class="list-item project-category">Front-End</li>
-                <li class="list-item project-category">Software</li>
-            </ul>
+
         </div>
-        <div class="cards">
-            <app-card *ngFor="let card of cards" [cardDetails]="card"></app-card>
+        <ul class="project-categories">
+            <li class="list-item project-category" (click)="selectAll()">All</li>
+            <li class="list-item project-category" (click)="select('FS')">Full-Stack</li>
+            <li class="list-item project-category" (click)="select('FE')">Front-End</li>
+            <li class="list-item project-category" (click)="select('S')">Software</li>
+        </ul>
+        <div class="cards-container">
+            <app-cards-container [cards]="selectedCards"></app-cards-container>
         </div>
         <!-- 
         <button class="btn btn-outline-primary" (click)="openScrollableContent(longContent)">View Details</button> -->

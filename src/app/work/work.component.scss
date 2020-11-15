@@ -70,22 +70,21 @@
         .work-content {
             margin: 0;
             display: block;
-            ul {
-                padding: 0;
-                margin-left: 5vw;
-                display: flex;
-                flex-direction: column;
+        }
+        ul {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            li {
+                margin: 0 2vw 1vh 0;
+                display: inline-flex;
                 align-items: center;
                 justify-content: center;
-                li {
-                    margin: 0 2vw 1vh 0;
-                    display: inline-flex;
-                    align-items: center;
-                    justify-content: center;
-                    list-style: none;
-                    width: 40vw;
-                    height: 7vh;
-                }
+                list-style: none;
+                width: 40vw;
+                height: 7vh;
             }
         }
     }

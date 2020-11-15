@@ -46,9 +46,17 @@ export class WorkComponent {
   }
 
   cards: CardDetails[] = [
-    {title: 'E-Waste', description: 'For a public writing assignment, I created a responsive mobile-friendly infographic to share information my teammates and I gathered about the disposal of electronic waste. Looks best on mobile but can be viewed on desktop as well.', tools: 'Angular 9', categories: ['FE'], imgUrl: '../../assets/ewaste-preview.PNG', linkText: 'open site', link: 'https://mayaprebish.github.io/ewaste'},
+    {title: 'E-Waste', description: 'A responsive mobile-friendly infographic I created to share information teammates and I gathered about the disposal of electronic waste. Looks best on mobile but can be viewed on desktop as well.', tools: 'Angular 9', categories: ['FE'], imgUrl: '../../assets/ewaste-preview.PNG', linkText: 'open site', link: 'https://mayaprebish.github.io/ewaste'},
 
-    {title: 'PluggedIn', description: 'PluggedIn is a sample full-stack web application that I created for my Web Development course.', tools: 'React.js, Redux.js, Spring Boot, HTML, CSS, Heroku, ClearDB', categories: ['FS'], imgUrl: '../../assets/pluggedin.png', linkText: 'details', link: 'pluggedInDetails'}
+    {title: 'PluggedIn', description: 'A simple full-stack web application that I created for my Web Development course.', tools: 'React.js, Redux.js, Spring Boot, HTML, CSS, Heroku, ClearDB', categories: ['FS'], imgUrl: '../../assets/pluggedin.png', linkText: 'details', link: 'pluggedInDetails'},
+
+    {title: 'Minesweeper', description: 'A replica of Minesweeper I created for Fundamentals of Computer Science II.', tools: 'Java', categories: ['S'], imgUrl: '../../assets/minesweeper.gif', linkText: 'details', link: 'minesweeperDetails'},
+
+    {title: 'Bullets', description: 'A small game I created for Fundamentals of CS II in order to practice linked-list structures and dynamic dispatch.', tools: 'Java', categories: ['S'], imgUrl: '../../assets/bullets.gif', linkText: 'details', link: 'bulletsDetails'},
+
+    {title: 'ExCellence', description: 'A simple Java application created using the MVC structure to produce and edit simple animations made using specially formatted text files.', tools: 'Java', categories: ['S'], imgUrl: '../../assets/excellence.gif', linkText: 'details', link: 'excellenceDetails'},
+
+    {title: 'Lizard Tracker', description: 'A MATLAB program used to visualize movement of test specimens over time in 3D.', tools: 'MATLAB', categories: ['S'], imgUrl: '../../assets/MATLAB.gif', linkText: 'details', link: 'lizardDetails'},
   ]
 
 }

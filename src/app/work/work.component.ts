@@ -46,11 +46,9 @@ export class WorkComponent {
   }
 
   cards: CardDetails[] = [
-    {title: 'e-waste', description: 'For a public writing assignment, I created a responsive mobile-friendly infographic to share information my teammates and I gathered about the disposal of electronic waste. Looks best on mobile but can be viewed on desktop as well.', tools: 'Angular 9', categories: ['FE'], imgUrl: '../../assets/ewaste-preview.PNG'},
-    {title: 'e-waste', description: 'For a public writing assignment, I created a responsive mobile-friendly infographic to share information my teammates and I gathered about the disposal of electronic waste. Looks best on mobile but can be viewed on desktop as well.', tools: 'Angular 9', categories: ['FE'], imgUrl: '../../assets/ewaste-preview.PNG'},
-    {title: 'e-waste', description: 'For a public writing assignment, I created a responsive mobile-friendly infographic to share information my teammates and I gathered about the disposal of electronic waste. Looks best on mobile but can be viewed on desktop as well.', tools: 'Angular 9', categories: ['FE'], imgUrl: '../../assets/ewaste-preview.PNG'},
+    {title: 'E-Waste', description: 'For a public writing assignment, I created a responsive mobile-friendly infographic to share information my teammates and I gathered about the disposal of electronic waste. Looks best on mobile but can be viewed on desktop as well.', tools: 'Angular 9', categories: ['FE'], imgUrl: '../../assets/ewaste-preview.PNG', linkText: 'open site', link: 'https://mayaprebish.github.io/ewaste'},
 
-    {title: 'PluggedIn', description: 'PluggedIn is a sample full-stack web application that I created for my Web Development course.', tools: 'React.js, Redux.js, Spring Boot, HTML, CSS, Heroku, ClearDB', categories: ['FS'], imgUrl: ''}
+    {title: 'PluggedIn', description: 'PluggedIn is a sample full-stack web application that I created for my Web Development course.', tools: 'React.js, Redux.js, Spring Boot, HTML, CSS, Heroku, ClearDB', categories: ['FS'], imgUrl: '../../assets/pluggedin.png', linkText: 'details', link: 'pluggedInDetails'}
   ]
 
 }

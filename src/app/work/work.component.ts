@@ -56,6 +56,7 @@ export class WorkComponent {
 
     {title: 'ExCellence', description: 'A simple Java application created using the MVC structure to produce and edit simple animations made using specially formatted text files.', tools: 'Java', categories: ['S'], imgUrl: '../../assets/excellence.gif', linkText: 'details', link: 'excellenceDetails'},
 
+    {title: '2019 Portfolio', description: "My very first portfolio website, made using React/js, HTML/CSS, and Bootstrap. Helps me see how far I've come.", tools: 'React/js, HTML, CSS, Bootstrap', categories: ['FE'], imgUrl: '', linkText: 'open site', link: 'https://mayaprebish.github.io/portfolio2019' },
     
     {title: 'DNDSite', description: 'A fun little site I made for my friends and I to keep track of initiative rolls and store art made during our Dungeons & Dragons campaigns.', tools: 'Angular, Angular MATERIAL', categories: ['FE'], imgUrl: '../../assets/taro.png', linkText: 'open site', link: 'https://mayaprebish.github.io/dndsite'},
 

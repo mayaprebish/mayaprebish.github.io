@@ -3,7 +3,7 @@
 .project-card {
     margin: 0 2vw 5vh;
     width: 28vw;
-    height: 90vh;
+    height: 40vh;
     background-color: $soft-white;
     display: block;
     box-shadow: 5px 5px 10px black;
@@ -12,7 +12,7 @@
         opacity: 0;
         position: relative;
         z-index: 1;
-        top: -25%;
+        top: -55%;
         display: flex;
         justify-content: center;
         font-family: 'Open Sans', sans-serif;
@@ -30,13 +30,6 @@
             cursor: pointer;
             color: $light-black;
             opacity: 1;
-            position: relative;
-            z-index: 1;
-            top: -25%;
-            display: flex;
-            justify-content: center;
-            font-family: 'Open Sans', sans-serif;
-            text-decoration: underline;
             transition: ease-in 200ms;
         }
     }
@@ -56,6 +49,12 @@
         background-size: cover;
     }
     animation: slidein 1s;
+}
+
+.modal-body,
+.modal-header,
+.modal-footer {
+    border-radius: 0;
 }
 
 @keyframes slidein {

@@ -15,13 +15,8 @@ export class CardComponent implements OnInit {
   }
 
   openDetails(details) {
-    if (this.cardDetails.linkText === "open site") {
-      window.open(this.cardDetails.link, '_blank');
-    } else {
-        this.modalService.open(details, { scrollable: true });
-    }
+    this.modalService.open(details, { scrollable: true });
   }
-
 
   ngOnInit(): void {
   }

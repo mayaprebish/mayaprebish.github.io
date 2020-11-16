@@ -1,0 +1,10 @@
+@import '../../sass/mixins';
+@import '../../sass/variables';
+.project-details {
+    a {
+        color: $light-black;
+        &:active {
+            color: $light-black;
+        }
+    }
+}

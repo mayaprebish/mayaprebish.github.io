@@ -4,6 +4,4 @@ export interface CardDetails {
     tools: string;
     categories: string[];
     imgUrl: string;
-    linkText: string;
-    link: string;
 }

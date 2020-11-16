@@ -46,21 +46,23 @@ export class WorkComponent {
   }
 
   cards: CardDetails[] = [
-    {title: 'E-Waste', description: 'A mobile-friendly infographic I created for a public writing assignment on the disposal of electronic waste. Looks best on mobile but can be viewed on desktop as well.', tools: 'Angular 9', categories: ['FE'], imgUrl: '../../assets/ewaste-preview.PNG', linkText: 'open site', link: 'https://mayaprebish.github.io/ewaste'},
+    {title: 'E-Waste', description: 'A mobile-friendly infographic I created for a public writing assignment about the disposal of electronic waste. Looks best on mobile but can be viewed on desktop as well.', tools: 'Angular 9', categories: ['FE'], imgUrl: '../../assets/ewaste-preview.PNG'},
 
-    {title: 'PluggedIn', description: 'A simple full-stack web application that I created for my Web Development course in Fall 2019.', tools: 'React.js, Redux.js, Java, Spring Boot, REST', categories: ['FS'], imgUrl: '../../assets/pluggedin.png', linkText: 'details', link: 'pluggedInDetails'},
+    {title: 'PluggedIn', description: 'A simple full-stack web application that I created for my Web Development course in Fall 2019.', tools: 'React.js, Redux.js, Java, Spring Boot, REST', categories: ['FS'], imgUrl: '../../assets/pluggedin.png'},
 
-    {title: 'Minesweeper', description: 'A replica of Minesweeper I created for Fundamentals of Computer Science II.', tools: 'Java', categories: ['S'], imgUrl: '../../assets/minesweeper.gif', linkText: 'details', link: 'minesweeperDetails'},
+    {title: 'DNDSite', description: 'A fun little site I made for my friends and I to keep track of initiative rolls, quotes and art from our Dungeons & Dragons campaigns.', tools: 'Angular, Angular MATERIAL', categories: ['FE'], imgUrl: '../../assets/taro.png'},
 
-    {title: 'Bullets', description: 'A small game I created for Fundamentals of CS II in order to practice linked-list structures and dynamic dispatch.', tools: 'Java', categories: ['S'], imgUrl: '../../assets/bullets.gif', linkText: 'details', link: 'bulletsDetails'},
+    {title: '2020 Portfolio', description: "I created the site you're on at this very moment using Angular 9. View the code for this site on Github:", tools: 'Angular 9', categories: ['FE'], imgUrl: '../../assets/portfolio2020.png'},
 
-    {title: 'ExCellence', description: 'A simple Java application created using the MVC structure to produce and edit simple animations made using specially formatted text files.', tools: 'Java', categories: ['S'], imgUrl: '../../assets/excellence.gif', linkText: 'details', link: 'excellenceDetails'},
+    {title: '2019 Portfolio', description: "My very first portfolio website, made using React/js, HTML/CSS, and Bootstrap. A good reminder how far I've come.", tools: 'React/js, HTML, CSS, Bootstrap', categories: ['FE'], imgUrl: '../../assets/portfolio2019.png'},
 
-    {title: '2019 Portfolio', description: "My very first portfolio website, made using React/js, HTML/CSS, and Bootstrap. Helps me see how far I've come.", tools: 'React/js, HTML, CSS, Bootstrap', categories: ['FE'], imgUrl: '', linkText: 'open site', link: 'https://mayaprebish.github.io/portfolio2019' },
+    {title: 'Minesweeper', description: 'A replica of Minesweeper I created for Fundamentals of Computer Science II.', tools: 'Java', categories: ['S'], imgUrl: '../../assets/minesweeper.gif'},
     
-    {title: 'DNDSite', description: 'A fun little site I made for my friends and I to keep track of initiative rolls and store art made during our Dungeons & Dragons campaigns.', tools: 'Angular, Angular MATERIAL', categories: ['FE'], imgUrl: '../../assets/taro.png', linkText: 'open site', link: 'https://mayaprebish.github.io/dndsite'},
+    {title: 'Bullets', description: 'A small game I created for Fundamentals of CS II in order to practice linked-list structures and dynamic dispatch.', tools: 'Java', categories: ['S'], imgUrl: '../../assets/bullets.gif'},
 
-    {title: 'Lizard Tracker', description: 'A MATLAB program used to visualize movement of test specimens over time in 3D.', tools: 'MATLAB', categories: ['S'], imgUrl: '../../assets/MATLAB.gif', linkText: 'details', link: 'lizardDetails'},
+    {title: 'ExCellence', description: 'A simple Java application created using the MVC structure to produce and edit simple animations made using specially formatted text files.', tools: 'Java', categories: ['S'], imgUrl: '../../assets/excellence.gif'},
+
+    {title: 'Lizard Tracker', description: 'A MATLAB program used to visualize movement of test specimens over time in 3D.', tools: 'MATLAB', categories: ['S'], imgUrl: '../../assets/MATLAB.gif'},
   ]
 
 }

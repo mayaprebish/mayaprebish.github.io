@@ -17,9 +17,7 @@
       </button>
     </div>
     <div class="modal-body" style="font-family: 'Open Sans', sans-serif">
-        <p>Hi! My site's still a work in progress! The details for this project will be here soon. For now, please feel free check out these and other older projects on my
-            <a href="https://mayaprebish.github.io/portfolio2019" target="_blank">2019 portfolio!</a>
-        </p>
+        <app-project-details [project]="cardDetails"></app-project-details>
     </div>
     <div class="modal-footer">
         <button type="button" class="btn btn-light" (click)="modal.close('Close click')">Close</button>

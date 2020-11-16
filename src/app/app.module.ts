@@ -13,6 +13,7 @@ import { ContactComponent } from './contact/contact.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CardComponent } from './card/card.component';
 import { CardsContainerComponent } from './cards-container/cards-container.component';
+import { ProjectDetailsComponent } from './project-details/project-details.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { CardsContainerComponent } from './cards-container/cards-container.compo
     WorkComponent,
     ContactComponent,
     CardComponent,
-    CardsContainerComponent
+    CardsContainerComponent,
+    ProjectDetailsComponent
   ],
   imports: [
     BrowserModule,

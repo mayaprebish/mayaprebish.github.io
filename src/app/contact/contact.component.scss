@@ -1,7 +1,7 @@
 @import "../../sass/mixins";
 @import "../../sass/variables";
 .contact {
-    height: 75vh;
+    height: 85vh;
     margin: 0;
     color: $light-black;
     background-color: $dusty-beige;
@@ -43,6 +43,18 @@
     height: 30vw;
     position: absolute;
     left: 10vw;
+}
+
+.resume-wrapper {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    .resume {
+        overflow: hidden;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+    }
 }
 
 

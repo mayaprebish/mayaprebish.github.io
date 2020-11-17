@@ -46,7 +46,7 @@ export class WorkComponent {
   }
 
   cards: CardDetails[] = [
-    {title: '2020 Portfolio', description: "I created the site you're on at this very moment using Angular 9 and SCSS. View the code for this site on Github:", tools: 'Angular 9', categories: ['FE'], imgUrl: '../../assets/portfolio2020.png'},
+    {title: '2020 Portfolio', description: "I created this portfolio website using Angular 9 and SCSS. I'm always looking for ways to improve as a web developer, so please let me know if you have any feedback! View the code for this site on Github:", tools: 'Angular 9', categories: ['FE'], imgUrl: '../../assets/portfolio2020.png'},
 
     {title: 'PluggedIn', description: 'A simple full-stack web application that I created for my Web Development course in Fall 2019.', tools: 'React.js, Redux.js, Java, Spring Boot, REST', categories: ['FS'], imgUrl: '../../assets/pluggedin.png'},
 

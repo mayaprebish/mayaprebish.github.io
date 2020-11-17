@@ -46,13 +46,13 @@ export class WorkComponent {
   }
 
   cards: CardDetails[] = [
-    {title: 'E-Waste', description: 'A mobile-friendly infographic I created for a public writing assignment about the disposal of electronic waste. Looks best on mobile but can be viewed on desktop as well.', tools: 'Angular 9', categories: ['FE'], imgUrl: '../../assets/ewaste-preview.PNG'},
+    {title: '2020 Portfolio', description: "I created the site you're on at this very moment using Angular 9 and SCSS. View the code for this site on Github:", tools: 'Angular 9', categories: ['FE'], imgUrl: '../../assets/portfolio2020.png'},
 
     {title: 'PluggedIn', description: 'A simple full-stack web application that I created for my Web Development course in Fall 2019.', tools: 'React.js, Redux.js, Java, Spring Boot, REST', categories: ['FS'], imgUrl: '../../assets/pluggedin.png'},
 
-    {title: 'DNDSite', description: 'A fun little site I made for my friends and I to keep track of initiative rolls, quotes and art from our Dungeons & Dragons campaigns.', tools: 'Angular, Angular MATERIAL', categories: ['FE'], imgUrl: '../../assets/taro.png'},
+    {title: 'E-Waste', description: 'A mobile-friendly infographic I created for a public writing assignment about the disposal of electronic waste. Looks best on mobile but can be viewed on desktop as well.', tools: 'Angular 9', categories: ['FE'], imgUrl: '../../assets/ewaste-preview.PNG'},
 
-    {title: '2020 Portfolio', description: "I created the site you're on at this very moment using Angular 9. View the code for this site on Github:", tools: 'Angular 9', categories: ['FE'], imgUrl: '../../assets/portfolio2020.png'},
+    {title: 'DNDSite', description: 'A fun little site I made for my friends and I to keep track of initiative rolls, quotes and art from our Dungeons & Dragons campaigns.', tools: 'Angular, Angular MATERIAL', categories: ['FE'], imgUrl: '../../assets/taro.png'},
 
     {title: '2019 Portfolio', description: "My very first portfolio website, made using React/js, HTML/CSS, and Bootstrap. A good reminder how far I've come.", tools: 'React/js, HTML, CSS, Bootstrap', categories: ['FE'], imgUrl: '../../assets/portfolio2019.png'},
 
